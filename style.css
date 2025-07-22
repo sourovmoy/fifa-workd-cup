@@ -17,6 +17,9 @@
   border-radius: 5px;
   border: none;
 }
+img {
+  max-width: 100%;
+}
 
 /* banner */
 .banner-container {
@@ -29,7 +32,12 @@
 }
 .banner-1 {
   margin: 0 125px;
+  flex: 1;
 }
+.banner-2 {
+  flex: 1;
+}
+
 .banner-2 img {
   display: block;
 }
@@ -124,4 +132,45 @@ footer h3 {
   margin: 50px 24px;
   color: #ffffff;
   font-weight: 500;
+}
+/* Media Query */
+/* for table */
+@media screen and (max-width: 992px) and (min-width: 776) {
+  .live-container {
+    flex-direction: column;
+  }
+  .left {
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+  }
+  .live-container .left .btn1 {
+    flex: 1;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+  }
+  .right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .banner-1 {
+    margin: 5px 20px;
+  }
+}
+/* for mobile */
+@media screen and (max-width: 776px) {
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .banner-container p {
+    max-width: none;
+  }
+  .live-container {
+    flex-direction: column;
+  }
+  .right {
+    margin: 30px auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
