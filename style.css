@@ -42,3 +42,44 @@
   padding: 20px 0px;
   max-width: 60%;
 }
+/* main */
+.live-container {
+  display: flex;
+  gap: 15px;
+}
+.left {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  height: fit-content;
+}
+.left .btn {
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.left .btn1:nth-child(1),
+.left .btn1:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+.card-details {
+  padding: 20px 20px;
+}
+.right h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.right .btn {
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+.right img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
