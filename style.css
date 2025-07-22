@@ -166,12 +166,14 @@ footer h3 {
     flex-direction: column;
     text-align: center;
     gap: 40px;
+    margin: 0 10px;
   }
   .banner-container p {
     max-width: none;
   }
   .live-container .left {
     flex-direction: column;
+    margin: 0 10px;
   }
   .right {
     margin: 30px auto;
